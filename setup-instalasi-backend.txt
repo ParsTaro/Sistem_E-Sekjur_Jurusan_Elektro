@@ -1,0 +1,65 @@
+=== PETUNJUK INSTALASI PROYEK BACKEND E-SEKJUR ===
+
+📌 PERSYARATAN YANG HARUS TERINSTALL:
+---------------------------------------
+1. Node.js & npm (https://nodejs.org)
+   - Versi yang disarankan: Node.js 18.x atau lebih baru
+
+2. MySQL / MariaDB
+   - Bisa menggunakan XAMPP (https://www.apachefriends.org/)
+
+3. Git (jika ingin clone dari GitHub)
+
+---------------------------------------
+📁 STRUKTUR FOLDER WAJIB:
+- .env                  --> file konfigurasi environment (isi contoh di bawah)
+- uploads/              --> folder tempat menyimpan file upload
+- models/db.js          --> koneksi ke database
+- routes/               --> definisi endpoint API
+- controllers/          --> logika tiap fitur (mahasiswa, sekjur, prodi, dosen)
+
+---------------------------------------
+📦 INSTALASI DEPENDENCIES
+Masuk ke folder backend project, lalu jalankan:
+
+npm install
+
+Dependencies utama:
+- express
+- mysql2
+- jsonwebtoken
+- multer
+- dotenv
+- cors
+- bcryptjs (jika menggunakan hash password)
+- moment (jika digunakan untuk waktu)
+
+Jika ada tambahan:
+npm install nama-library
+
+---------------------------------------
+⚙️ ISI CONTOH FILE .env
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=semester_antara
+PORT=5000
+JWT_SECRET=e-sekjur-secret
+
+---------------------------------------
+🚀 JALANKAN SERVER:
+
+node index.js
+atau
+nodemon index.js    (jika pakai nodemon)
+
+Server akan jalan di: http://localhost:5000
+
+---------------------------------------
+📂 CATATAN:
+- Jangan upload folder `node_modules` ke GitHub
+- Jangan upload file `.env` ke GitHub (karena menyimpan kredensial)
+- Jangan lupa buat database `semester_antara` dan import struktur tabelnya
+
+===========================================

@@ -1,0 +1,70 @@
+=== PETUNJUK INSTALASI PROYEK FRONTEND E-SEKJUR ===
+
+📌 PERSYARATAN YANG HARUS TERINSTALL:
+---------------------------------------
+1. Node.js & npm (https://nodejs.org)
+   - Versi yang disarankan: Node.js 18.x atau lebih baru
+
+2. Git (jika ingin clone dari GitHub)
+
+---------------------------------------
+📁 STRUKTUR FOLDER UTAMA:
+- public/
+- src/
+  ├── assets/            --> Gambar, ikon, file statis
+  ├── components/        --> Komponen UI (Sidebar, Card, dll)
+  ├── constants/         --> Data statis (opsi dropdown, enum, dll)
+  ├── layouts/           --> Template layout (AdminLayout, MahasiswaLayout)
+  ├── routes/            --> Routing halaman (React Router)
+  ├── services/          --> API client (axios, dll)
+  ├── utils/             --> Fungsi bantu (token, konversi, dll)
+  ├── App.js             --> Komponen utama
+  ├── index.js           --> Entry point
+
+---------------------------------------
+📦 INSTALASI DEPENDENCIES
+
+Masuk ke folder frontend project (misal: `semester-antara-frontend/`), lalu jalankan:
+
+npm install
+
+🔹 Dependencies umum:
+- react
+- react-dom
+- react-router-dom
+- axios
+- bootstrap
+- lucide-react
+- jwt-decode
+- moment
+
+🔹 Kalau kamu pakai Tailwind:
+- tailwindcss
+- postcss
+- autoprefixer
+
+Install dengan:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+---------------------------------------
+⚙️ CARA JALANKAN PROJECT:
+
+npm start
+
+👉 Ini akan membuka otomatis di:
+http://localhost:3000
+
+---------------------------------------
+📁 FILE LAIN YANG PENTING:
+- `.env`         --> Optional, untuk base URL API (REACT_APP_API_URL)
+- `.gitignore`   --> Abaikan `node_modules`, `.env`, dll
+- `DATABASE.sql` --> Hanya dokumentasi (tidak digunakan frontend)
+
+---------------------------------------
+💡 TIPS:
+- Jangan upload `node_modules/` ke GitHub
+- Jangan upload file `.env` jika ada
+- Pastikan backend berjalan dulu di http://localhost:5000 (atau sesuaikan)
+
+===========================================
